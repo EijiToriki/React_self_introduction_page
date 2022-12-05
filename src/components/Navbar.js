@@ -3,6 +3,6 @@ import './css/Navbar.css'
 
 export default function Navbar() {
   return (
-    <nav>Navbar</nav>
+    <nav>Self Intorduction Page</nav>
   )
 }

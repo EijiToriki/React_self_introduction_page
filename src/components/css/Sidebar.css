@@ -13,6 +13,16 @@
   border-radius: 11px;
   background-color: white;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.app-sidebar-card.active {
+  width: 90%;
+  box-shadow: 1px 4px 18px 0px #777777;
+  border-radius: 11px;
+  background-color: rgba(255, 162, 0, 0.442);
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .app-sidebar-card .app-sidebar-title{
@@ -21,5 +31,5 @@
 }
 
 .app-sidebar-card .app-sidebar-content{
-  font-size: 18px;
+  font-size: 16px;
 }
