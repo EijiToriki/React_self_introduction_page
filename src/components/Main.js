@@ -1,23 +1,20 @@
 import React from 'react'
 import "./css/Main.css"
-import BasicInfo from './MainContent/BasicInfo'
-import School from './MainContent/School'
-import Work from './MainContent/Work'
-import Skill from './MainContent/Skill'
+import { componentDict } from '../data/sidebar_data.json'
 
 
-export default function Main({activeContentId}) {
+export default function Main({ActiveComponet}) {
+  if(ActiveComponet !== ''){
+    ActiveComponet = componentDict[ActiveComponet]
+  }
+  
   return (
     <div className='app-main'>
       {
-        activeContentId === 1 ? <BasicInfo></BasicInfo> :
-        activeContentId === 2 ? <School></School> :
-        activeContentId === 3 ? <Work></Work> :
-        activeContentId === 4 ? <Skill></Skill> :
-        `Contens から閲覧したい情報を選択してください`
+        ActiveComponet === '' ? 
+          `Contens から閲覧したい情報を選択してください` :
+          <ActiveComponet />
       }
-      
-      
     </div>
   )
 }
