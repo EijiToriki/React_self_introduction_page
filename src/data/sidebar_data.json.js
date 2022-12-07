@@ -13,7 +13,7 @@ const basicData =  [
     {
       "id":2,
       "title":"学歴",
-      "content":"高校以降の学校名と主な実績",
+      "content":"高校以降の出身校と主な実績",
       "componentName":"School"
     },
     {
