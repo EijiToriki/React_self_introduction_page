@@ -1,5 +1,5 @@
 import React from 'react'
-import "./School.css"
+import "../css/School.css"
 import { schoolInfo, outComeInfo } from '../../data/School_data.json'
 
 export default function School() {

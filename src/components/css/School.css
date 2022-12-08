@@ -62,10 +62,10 @@ table td:last-child{
 
 .td-outcome{
   width: 40%;
-  white-space: pre;
+  white-space: pre-line;
 }
 
 .td-title{
   width: 52%;
-  white-space: pre;
+  white-space: pre-line;
 }
