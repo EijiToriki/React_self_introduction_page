@@ -2,3 +2,9 @@
   width: 70%;
   height: 100vh;
 }
+
+.app-main-none-content{
+  margin-top: 200px;
+  font-size: 24px;
+  color: rgb(188, 188, 188);
+}

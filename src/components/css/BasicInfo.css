@@ -1,0 +1,50 @@
+.app-basic-info-title{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.app-basic-info-content{
+  display: flex;
+}
+
+.app-basic-info-img-place{
+  width: 40%;
+}
+
+.app-basic-info-img-place .app-basic-info-img{
+  width: 90%;
+}
+
+.app-basic-info-description{
+  width: 60%;
+  display: flex;
+  flex-flow: column;
+}
+
+.app-basic-info-desc-title{
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.app-basic-info-desc-content{
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.app-basic-info-desc-detail{
+  display: flex;
+  justify-content: left;
+  margin-left: 60px;
+  font-size: 16px;
+  text-align: left;
+  white-space: pre-line;  
+  margin-bottom: 10px;
+}

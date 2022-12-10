@@ -12,7 +12,7 @@ export default function Main({ActiveComponet}) {
     <div className='app-main'>
       {
         ActiveComponet === '' ? 
-          `Contens から閲覧したい情報を選択してください` :
+          <div className='app-main-none-content'>Contens から閲覧したい情報を選択してください</div> :
           <ActiveComponet />
       }
     </div>
