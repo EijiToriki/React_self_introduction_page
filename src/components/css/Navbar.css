@@ -1,10 +1,22 @@
-nav {
+.app-nav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   height: 50px;
   background-color: orange;
-  gap:45px;
   font-size: 28px;
   font-weight: bolder;
 }
+
+.app-nav-title{
+  margin-left: 6%;
+  justify-content: left;
+  
+}
+
+.app-nav-login{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 65%;
+}
+

@@ -3,7 +3,11 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Main from './components/Main';
 import basicData from './data/sidebar_data.json';
+import Login from './components/Login';
+
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+
 
 
 function App() {
@@ -18,19 +22,28 @@ function App() {
   }, [activeContentId])
 
   return (
-    <div className="App">
-      <Navbar></Navbar>
-      <div className='App-content'>
-        <Sidebar 
-          basicData={basicData} 
-          activeContentId={activeContentId} 
-          setActiveContentId={setActiveContentId}  
-        />
-        <Main
-          ActiveComponet={ActiveComponet}
-        />
+    <Router>
+      <div className="App">
+        <Navbar></Navbar>
+        <div className='App-content'>
+          <Routes>
+              <Route path="/" element={
+                <>
+                  <Sidebar 
+                    basicData={basicData} 
+                    activeContentId={activeContentId} 
+                    setActiveContentId={setActiveContentId}  
+                  />
+                  <Main
+                    ActiveComponet={ActiveComponet}
+                  />
+                </>
+              } />
+              <Route path="login" element={<Login />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
