@@ -1,0 +1,63 @@
+.app-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.app-login-title{
+  margin-top: 40px;
+}
+
+.app-login-card{
+  width: 500px;
+  height: 300px;
+  box-shadow: 10px 16px 9px -5px #777777;
+  border-radius: 9px;
+  background-color: white;
+}
+
+.app-login-user{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app-login-user label{
+  width: 50%;
+  font-size: 20px;
+}
+
+
+.app-login-pass{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.app-login-pass label{
+  width: 50%;
+  font-size: 20px;
+}
+
+
+
+.app-login-button {
+  width: 100px;
+  padding: 10px 0;
+  background-color: rgb(169, 170, 247);
+  border: none;
+  box-shadow: 8px 0px 29px -5px #777777;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.app-login-button:hover{
+  transform: translateY(5px);
+  box-shadow: none;
+}
