@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 function App() {
   const [activeContentId, setActiveContentId] = useState(0)
   const [ActiveComponet, setActiveComponent] = useState('')
+  const [isAuth, setIsAuth] = useState(false)
 
   useEffect(() => {
     if(activeContentId !== 0){
@@ -21,10 +22,12 @@ function App() {
     }  
   }, [activeContentId])
 
+  console.log(isAuth)
+
   return (
     <Router>
       <div className="App">
-        <Navbar></Navbar>
+        <Navbar isAuth={isAuth}></Navbar>
         <div className='App-content'>
           <Routes>
               <Route path="/" element={
@@ -39,7 +42,7 @@ function App() {
                   />
                 </>
               } />
-              <Route path="login" element={<Login />} />
+              <Route path="login" element={<Login setIsAuth={setIsAuth} />} />
           </Routes>
         </div>
       </div>

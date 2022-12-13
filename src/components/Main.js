@@ -7,7 +7,7 @@ export default function Main({ActiveComponet}) {
   if(ActiveComponet !== ''){
     ActiveComponet = componentDict[ActiveComponet]
   }
-  console.log(ActiveComponet)  
+
   return (
     <div className='app-main'>
       {
