@@ -1,9 +1,15 @@
 .app-main{
   width: 70%;
-  height: 100vh;
+  height: 100%;
 }
 
 .app-main-none-content{
+  margin-top: 200px;
+  font-size: 24px;
+  color: rgb(188, 188, 188);
+}
+
+.app-no-login{
   margin-top: 200px;
   font-size: 24px;
   color: rgb(188, 188, 188);

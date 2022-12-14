@@ -27,7 +27,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar isAuth={isAuth}></Navbar>
+        <Navbar isAuth={isAuth} setIsAuth={setIsAuth}></Navbar>
         <div className='App-content'>
           <Routes>
               <Route path="/" element={
@@ -39,6 +39,7 @@ function App() {
                   />
                   <Main
                     ActiveComponet={ActiveComponet}
+                    isAuth={isAuth}
                   />
                 </>
               } />
