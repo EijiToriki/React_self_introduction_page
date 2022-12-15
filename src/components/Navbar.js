@@ -6,6 +6,7 @@ import { faArrowRightToBracket, faArrowRightFromBracket } from '@fortawesome/fre
 
 export default function Navbar({isAuth, setIsAuth}) {
   const handleLogout = () => {
+    localStorage.clear()
     setIsAuth(!isAuth)
   }
   

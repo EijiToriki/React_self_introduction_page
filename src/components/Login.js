@@ -18,6 +18,7 @@ export default function Login({setIsAuth}) {
       // パスワードの認証を行う
       if(matchUser.password === password){
         setIsAuth(true)
+        localStorage.setItem("isAuth", true)
         navigate('/')
       }else{
         console.log('ユーザ名 もしくは パスワードが違います')

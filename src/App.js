@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 function App() {
   const [activeContentId, setActiveContentId] = useState(0)
   const [ActiveComponet, setActiveComponent] = useState('')
-  const [isAuth, setIsAuth] = useState(false)
+  const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"))
 
   useEffect(() => {
     if(activeContentId !== 0){
