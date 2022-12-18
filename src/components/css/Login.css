@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
 }
 
 .app-login-title{
@@ -16,6 +15,7 @@
   box-shadow: 10px 16px 9px -5px #777777;
   border-radius: 9px;
   background-color: white;
+  margin-top: 100px;
 }
 
 .app-login-user{

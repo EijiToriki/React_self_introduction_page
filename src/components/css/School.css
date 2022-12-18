@@ -1,3 +1,7 @@
+.school-app{
+  margin-bottom: 10px;
+}
+
 .school-app-title{
   margin-top: 20px;
   font-size: 24px;
@@ -9,6 +13,7 @@ table{
   margin: auto;
   border-collapse:separate;
   border-spacing: 0;
+  font-size: 14px;
 }
 
 table th:first-child{

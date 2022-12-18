@@ -13,19 +13,19 @@ const basicData =  [
     {
       "id":2,
       "title":"学歴",
-      "content":"高校以降の出身校と主な実績",
+      "content":"出身校と主な実績",
       "componentName":"School"
     },
     {
       "id":3,
       "title":"職歴",
-      "content":"これまでの職歴と業務内容",
+      "content":"現在の業務内容",
       "componentName":"Work"
     },
     {
       "id":4,
       "title":"保有スキル",
-      "content":"資格や扱えるプログラミング言語等",
+      "content":"資格・プログラミング言語",
       "componentName":"Skill"
     }
   ]
