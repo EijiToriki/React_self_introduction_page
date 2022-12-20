@@ -1,0 +1,30 @@
+.work-app{
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+.work-app-title{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.work-app-content{
+  margin-left: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 18px;
+}
+
+.work-app-mini-title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+
+.work-app-description{
+  font-size: 18px;
+  margin-left: 7%;
+  white-space: pre-line;  
+}

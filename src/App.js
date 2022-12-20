@@ -4,6 +4,9 @@ import Sidebar from './components/Sidebar';
 import Main from './components/Main';
 import basicData from './data/sidebar_data.json';
 import Login from './components/Login';
+import NavbarS from './components_smartphone/Navbar';
+import MainS from './components_smartphone/Main';
+import LoginS from './components_smartphone/Login';
 
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
@@ -50,7 +53,27 @@ function App() {
         </Router>
       </MediaQuery>
       <MediaQuery query="(max-width: 767px)">
-        スマホ画面だよ
+      <Router>
+          <div className="App">
+            <NavbarS 
+              isAuth={isAuth} 
+              setIsAuth={setIsAuth} 
+              basicData={basicData} 
+              setActiveContentId={setActiveContentId} 
+            />
+            <div className='App-content'>
+              <Routes>
+                  <Route path="/" element={
+                      <MainS
+                        ActiveComponet={ActiveComponet}
+                        isAuth={isAuth}
+                      />
+                  } />
+                  <Route path="login" element={<LoginS setIsAuth={setIsAuth} />} />
+              </Routes>
+            </div>
+          </div>
+        </Router>
       </MediaQuery>
     </>
   );
