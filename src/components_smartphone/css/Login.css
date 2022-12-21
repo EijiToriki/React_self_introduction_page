@@ -10,7 +10,7 @@
 }
 
 .app-login-card{
-  width: 500px;
+  width: 350px;
   height: 300px;
   box-shadow: 10px 16px 9px -5px #777777;
   border-radius: 9px;
@@ -25,7 +25,7 @@
 }
 
 .app-login-user label{
-  width: 50%;
+  width: 40%;
   font-size: 20px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .app-login-pass label{
-  width: 50%;
+  width: 40%;
   font-size: 20px;
 }
 

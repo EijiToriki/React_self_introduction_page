@@ -61,7 +61,7 @@ function App() {
               basicData={basicData} 
               setActiveContentId={setActiveContentId} 
             />
-            <div className='App-content'>
+            <div className='App-content-smart'>
               <Routes>
                   <Route path="/" element={
                       <MainS
