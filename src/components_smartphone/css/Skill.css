@@ -57,15 +57,16 @@ table td:last-child{
 }
 
 .td-name{
-  width: 25%;
+  width: 15%;
 }
 
 .td-span{
-  width: 10%;
+  width: 8%;
   white-space: pre-line;
 }
 
 .td-experience{
   width: 65%;
   white-space: pre-line;
+  font-size: 10px;
 }

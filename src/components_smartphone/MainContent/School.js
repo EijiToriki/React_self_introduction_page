@@ -29,26 +29,26 @@ export default function School() {
       <div className='school-app-title'>
         実績
       </div>
-      <table>
-        <tbody>
-          <tr>
-            <th>年</th>
-            <th>月</th>
-            <th>成果</th>
-            <th>発表タイトル</th>
-          </tr>
-          {outComeInfo.map((outcome) => {
-            return (
-              <tr key={outcome.id}>
-                <td className='td-year'>{outcome.year}</td>
-                <td className='td-month'>{outcome.month}</td>
+      {outComeInfo.map((outcome) => {
+        return (
+          <table className='table-outcome' key={outcome.id}>
+            <tbody className='tbody-outcome'>
+              <tr>
+                <th className={`th-outcome ${outcome.id % 2 === 0 ? 'odd' : 'even'}`}>年・月</th>
+                <td>{outcome.year}年 / {outcome.month}月</td>
+              </tr>
+              <tr>
+                <th className={`th-outcome ${outcome.id % 2 === 0 ? 'odd' : 'even'}`}>成果</th>
                 <td className='td-outcome'>{outcome.outcome}</td>
+              </tr>
+              <tr>
+                <th className={`th-outcome ${outcome.id % 2 === 0 ? 'odd' : 'even'}`}>テーマ</th>
                 <td className='td-title'>{outcome.title}</td>
               </tr>
-            )
-          })}
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        )
+      })}
     </div>
   )
 }

@@ -4,23 +4,23 @@ import basicInfo from '../../data/BasicInfo_data.json'
 
 export default function BasicInfo() {
   return (
-    <div className='app-basic-info'>
-      <div className='app-basic-info-title'>プロフィール</div>
-      <div className='app-basic-info-content'>
-        <div className='app-basic-info-img-place'>
-          <img className='app-basic-info-img' src='myimg.jpg'></img>
+    <div className='app-basic-info-smart'>
+      <div className='app-basic-info-title-smart'>プロフィール</div>
+      <div className='app-basic-info-content-smart'>
+        <div className='app-basic-info-img-place-smart'>
+          <img className='app-basic-info-img-smart' src='myimg.jpg'></img>
         </div>
-        <div className='app-basic-info-description'>
+        <div className='app-basic-info-description-smart'>
           {basicInfo.map((info) => {
             return (
               <div key={info.id}>
-                <div className='app-basic-info-desc-title'>
+                <div className='app-basic-info-desc-title-smart'>
                 〈{info.title}〉
                 </div>
-                <div className='app-basic-info-desc-content'>
+                <div className='app-basic-info-desc-content-smart'>
                   {info.content}
                 </div>
-                <div className='app-basic-info-desc-detail'>
+                <div className='app-basic-info-desc-detail-smart'>
                   {info.description}
                 </div>
               </div>

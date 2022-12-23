@@ -3,6 +3,11 @@ import School from '../components/MainContent/School'
 import Work from '../components/MainContent/Work'
 import Skill from '../components/MainContent/Skill'
 
+import BasicInfoS from '../components_smartphone/MainContent/BasicInfo'
+import SchoolS from '../components_smartphone/MainContent/School'
+import WorkS from '../components_smartphone/MainContent/Work'
+import SkillS from '../components_smartphone/MainContent/Skill'
+
 const basicData =  [
     {
       "id":1,
@@ -37,5 +42,12 @@ const componentDict = {
   "Skill" : Skill
 }
 
+const componentDictSmart = {
+  "BasicInfo" : BasicInfoS,
+  "School" : SchoolS,
+  "Work" : WorkS,
+  "Skill" : SkillS
+}
+
 export default basicData
-export { componentDict }
+export { componentDict, componentDictSmart }

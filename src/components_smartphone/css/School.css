@@ -13,7 +13,14 @@ table{
   margin: auto;
   border-collapse:separate;
   border-spacing: 0;
-  font-size: 14px;
+  font-size: 12px;
+}
+
+.table-outcome{
+  border-collapse:separate;
+  border-spacing: 2px;
+  width: 90%;
+  margin-bottom: 20px;
 }
 
 table th:first-child{
@@ -36,6 +43,34 @@ table th{
   padding: 10px 0;
 }
 
+.tbody-outcome{
+  margin-bottom: 100px;
+}
+
+.th-outcome.odd{
+  width: 15%;
+  text-align: center;
+  color:white;
+  background: linear-gradient(#829ebc,#225588);
+  border-left: 1px solid #3c6690;
+  border-top: 1px solid #3c6690;
+  border-bottom: 1px solid #3c6690;
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+  padding: 10px 0;
+}
+
+.th-outcome.even{
+  width: 15%;
+  text-align: center;
+  color:white;
+  background: linear-gradient(#ffc983,#ffa023);
+  border-left: 1px solid #ffc983;
+  border-top: 1px solid #ffc983;
+  border-bottom: 1px solid #ffc983;
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+  padding: 10px 0;
+}
+
 table tr:last-child td:first-child {
   border-radius: 0 0 0 5px;
 }
@@ -48,7 +83,7 @@ table td{
   text-align: center;
   border-left: 1px solid #a8b7c5;
   border-bottom: 1px solid #a8b7c5;
-  border-top:none;
+  border-top: 1px solid #a8b7c5;
   box-shadow: 0px -3px 5px 1px #eee inset;
   padding: 10px 0;
 }
@@ -57,20 +92,21 @@ table td:last-child{
   border-right: 1px solid #a8b7c5;
 }
 
-.td-year{
-  width: 5%;
-}
-
-.td-month{
-  width: 3%;
-}
 
 .td-outcome{
-  width: 40%;
   white-space: pre-line;
 }
 
 .td-title{
-  width: 52%;
   white-space: pre-line;
+}
+
+.table-outcome th,.table-outcome td{
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.table-outcome td{
+  border:solid 1px #9d9d9d;
 }

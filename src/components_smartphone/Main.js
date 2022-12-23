@@ -1,10 +1,10 @@
 import React from 'react'
-import { componentDict } from '../data/sidebar_data.json'
+import { componentDictSmart } from '../data/sidebar_data.json'
 import "./css/Main.css"
 
 export default function Main({ActiveComponet, isAuth}) {
   if(ActiveComponet !== ''){
-    ActiveComponet = componentDict[ActiveComponet]
+    ActiveComponet = componentDictSmart[ActiveComponet]
   }
 
   return (
